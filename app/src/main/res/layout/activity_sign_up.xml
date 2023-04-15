@@ -21,7 +21,7 @@
             android:foregroundGravity="left"
             android:gravity="left"
             android:text="Create New Account"
-            android:textColor="#44aaa9"
+            android:textColor="@color/amigo"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -35,20 +35,21 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/editTextRegUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/user1"
+                android:drawableLeft="@drawable/baseline_user_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Your Name"
                 android:inputType="textPersonName"
-                android:textColor="#0B0B0B"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/editTextRegPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -58,11 +59,11 @@
                 android:ems="10"
                 android:hint="Enter Your Phone Number"
                 android:inputType="phone"
-                android:textColor="#0B0B0B"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/editTextRegEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -72,38 +73,38 @@
                 android:ems="10"
                 android:hint="Enter Your Email Id"
                 android:inputType="textEmailAddress"
-                android:textColor="#0B0B0B"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editTextRegPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:drawableLeft="@drawable/lock"
+                android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Password"
                 android:inputType="textPassword"
-                android:textColor="#0B0B0B"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/editTextRegConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:drawableLeft="@drawable/lock"
+                android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
-                android:textColor="#0B0B0B"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <android.widget.Button
-                android:id="@+id/button3"
+                android:id="@+id/buttonSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -121,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Already have an account?"
-                    android:textColor="#08BCAB" />
+                    android:textColor="@color/amigo" />
 
                 <TextView
                     android:id="@+id/signIn"
@@ -129,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="SignIn"
-                    android:textColor="#04B6A6"
+                    android:textColor="@color/amigo"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -158,7 +159,7 @@
                     android:foregroundGravity="center"
                     android:gravity="center"
                     android:text="Or with"
-                    android:textColor="#09D8F3" />
+                    android:textColor="@color/amigo" />
 
                 <View
                     android:id="@+id/view2"
@@ -177,10 +178,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="102dp"
+                    android:layout_width="112dp"
                     android:layout_height="108dp"
                     android:layout_gravity="center"
-                    android:background="@color/black"
+                    android:background="@android:color/transparent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/facebook" />
 
@@ -189,7 +190,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/black"
+                    android:background="@android:color/transparent"
                     android:foregroundGravity="right"
                     android:scaleType="centerCrop"
                     android:src="@drawable/google" />

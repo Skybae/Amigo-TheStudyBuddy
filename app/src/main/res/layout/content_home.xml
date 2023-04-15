@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1EFEE"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ScrollView>
     <fragment
         android:id="@+id/nav_host_fragment_content_home"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -26,8 +29,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="#D1EFEE">
+        android:layout_marginBottom="20dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSyllabus"
@@ -38,6 +40,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
+            app:cardBackgroundColor="#F6F8FA"
             android:padding="60dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
@@ -54,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/syllabus"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,7 +79,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -92,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/pyq"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,7 +117,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -130,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/notes"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,7 +155,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -168,7 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/circulars"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -190,7 +193,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -206,7 +209,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/imp"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -228,7 +231,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -244,7 +247,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/track"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -266,7 +269,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:padding="60dp"
-            app:cardBackgroundColor="#F6F2F2"
+            app:cardBackgroundColor="#F6F8FA"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -282,7 +285,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ebook"
-                    app:tint="#000000" />
+                    app:tint="@color/amigo" />
 
                 <TextView
                     android:layout_width="wrap_content"

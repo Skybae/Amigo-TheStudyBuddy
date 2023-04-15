@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="#111111"
+    android:background="#D6E9EC"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -20,7 +20,7 @@
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
        app:tint="#44AAA9"
-        app:srcCompat="@drawable/user1" />
+        app:srcCompat="@drawable/baseline_user_24" />
 
     <TextView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Username"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#F6F5F5"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <TextView
@@ -36,6 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="username@gmail.com"
-        android:textColor="#FAF7F7"
+        android:textColor="#000"
         android:textStyle="normal" />
 </LinearLayout>

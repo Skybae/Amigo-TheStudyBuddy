@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 finally{
                     Intent intent = new Intent(MainActivity.this, Login.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         };thread.start();

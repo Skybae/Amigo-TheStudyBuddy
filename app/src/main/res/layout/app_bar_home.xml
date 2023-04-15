@@ -10,14 +10,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#44AAA9"
+        android:background="@color/amigo"
         android:theme="@style/Theme.AmigoTheStudyBuddy.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#111111"
+            android:background="@color/amigo"
             app:popupTheme="@style/Theme.AmigoTheStudyBuddy.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -32,8 +32,8 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         android:contentDescription="my account"
-        android:src="@drawable/user1"
-        app:backgroundTint="#F3F1F1"
+        android:src="@drawable/baseline_user_24"
+        app:backgroundTint="#fff"
          />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
