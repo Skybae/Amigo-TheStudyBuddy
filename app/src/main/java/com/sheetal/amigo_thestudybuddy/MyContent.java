@@ -14,14 +14,6 @@ public class MyContent extends AppCompatActivity {
         setContentView(R.layout.activity_my_content);
 
         getSupportActionBar().setTitle("My Content");
-        onBackPressed();
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(MyContent.this,HomeActivity.class));
-
-        super.onBackPressed();
     }
 }

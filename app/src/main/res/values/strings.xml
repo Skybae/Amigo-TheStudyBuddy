@@ -12,4 +12,15 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_home">HomeActivity</string>
+
+    <string name="syllabus">Syllabus</string>
+    <string name="pyq">PYQ</string>
+    <string name="notes">Notes</string>
+    <string name="circulars">Circulars</string>
+    <string name="imp">IMP Questions</string>
+    <string name="track">Track Yourself</string>
+    <string name="ebooks">E-books</string>
+    <string name="myContent">My Content</string>
+
+
 </resources>

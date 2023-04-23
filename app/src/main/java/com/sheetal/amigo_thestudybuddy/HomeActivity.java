@@ -1,11 +1,9 @@
 package com.sheetal.amigo_thestudybuddy;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -25,6 +23,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sheetal.amigo_thestudybuddy.databinding.ActivityHomeBinding;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     SharedPreferences sharedPreferences;
@@ -123,15 +123,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
             }
         });
-
     }
 
     @Override
     public void onBackPressed() {
         drawerLayout=findViewById(R.id.drawer_layout);
         if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-            startActivity(new Intent(getApplicationContext(),Login.class));
+            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
         }
         else {
             super.onBackPressed();
@@ -180,10 +178,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_settings:
                 break;
 
-
-
         }
-        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }

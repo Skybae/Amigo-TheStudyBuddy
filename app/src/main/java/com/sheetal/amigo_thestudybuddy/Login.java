@@ -1,7 +1,5 @@
 package com.sheetal.amigo_thestudybuddy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +26,7 @@ public class Login extends android.app.Activity {
 //        getSupportActionBar().setTitle("Sign In");
           edUsername= findViewById(R.id.editTextLoginUsername);
           edPassword=findViewById(R.id.editTextLoginPassword);
-        TextView textView = (TextView) findViewById(R.id.signUp);
+        TextView textView =  findViewById(R.id.signUp);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
