@@ -35,7 +35,7 @@ dependencies {
     //implementation 'androidx.appcompat:appcompat:1.7.0-alpha02'
 
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
+    implementation 'com.karumi:dexter:6.2.3'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
