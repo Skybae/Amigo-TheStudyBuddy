@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Circulars extends AppCompatActivity {
+public class FlashCardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circulars);
-        getSupportActionBar().setTitle("Circulars");
+        setContentView(R.layout.activity_flash_card);
+        getSupportActionBar().setTitle("Flash Cards");
     }
 }

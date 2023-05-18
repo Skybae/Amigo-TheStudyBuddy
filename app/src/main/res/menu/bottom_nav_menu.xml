@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/b_nav_SelectBranch"
+        android:title="Select Branch"
+        android:icon="@drawable/branch"/>
+
+    <item
+        android:id="@+id/b_nav_circular"
+        android:title="Circulars"
+        android:icon="@drawable/circulars" />
+    <item
+        android:id="@+id/b_nav_track"
+        android:title="Track Yourself"
+        android:icon="@drawable/track"/>
+    </menu>

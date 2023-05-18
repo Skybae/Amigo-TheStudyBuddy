@@ -1,0 +1,7 @@
+<root>
+    <item name='androidx.fragment.app.Fragment android.content.Context requireContext()'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="pure" val="true" />
+        </annotation>
+    </item>
+</root>

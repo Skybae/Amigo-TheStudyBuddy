@@ -50,8 +50,10 @@ public class Login extends android.app.Activity {
                     editor.putString("username", username);
                     //to save our data with key and value.
                     editor.apply();
-                    Intent intent = new Intent(Login.this, HomeActivity.class);
+                    Intent intent = new Intent(Login.this, HomeActivity .class);
                     startActivity(intent);
+//                    getSupportActionBar().setTitle("Select Branch");
+
                     finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Invalid Username and Password", Toast.LENGTH_SHORT).show();

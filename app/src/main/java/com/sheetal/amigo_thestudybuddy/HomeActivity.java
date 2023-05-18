@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -32,6 +34,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomeBinding binding;
 
+    BottomNavigationView bottomNavigationView;
+
+    CircularFragment circularFragment=new CircularFragment();
+    Select_Branch selectBranch=new Select_Branch();
+    TrackFragment trackFragment=new TrackFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,87 +52,48 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 .setAction("Action", null).show());
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_slideshow)
-                .setOpenableLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
 
         //Welcome Toast
-       sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username", "");
         Toast.makeText(getApplicationContext(), "Welcome " + username, Toast.LENGTH_SHORT).show();
 
         //menu's clickable
-       navigationView.bringToFront();
+        navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
         navigationView.setCheckedItem(R.id.app_bar_home);
 
         //content home
-        CardView cv;
-        cv= findViewById(R.id.cardSyllabus);
-        cv.setOnClickListener(new View.OnClickListener() {
+        //bottom navigation
+        bottomNavigationView=findViewById(R.id.bottom_navigation);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,selectBranch).commit();
+
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), Syllabus.class);
-                startActivity(intent);
-            }
-        });
-        cv= findViewById(R.id.cardExamPaper);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), ExamPaper.class);
-                startActivity(intent);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.b_nav_circular:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,circularFragment).commit();
+                        getSupportActionBar().setTitle("Circulars");
+                        return true;
+
+                    case R.id.b_nav_SelectBranch:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,selectBranch).commit();
+                        getSupportActionBar().setTitle("Select Branch");
+                        return true;
+
+                    case R.id.b_nav_track:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,trackFragment).commit();
+                        getSupportActionBar().setTitle("Track Yourself");
+                        return true;
+                }
+                return false;
             }
         });
 
-        cv= findViewById(R.id.cardNotes);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), Notes.class);
-                startActivity(intent);
-            }
-        });
-        cv= findViewById(R.id.cardCirculars);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), Circulars.class);
-                startActivity(intent);
-            }
-        });
-        cv= findViewById(R.id.cardIMP);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), IMPquestions.class);
-                startActivity(intent);
-            }
-        });
-        cv= findViewById(R.id.cardTrack);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), TrackYourself.class);
-                startActivity(intent);
-            }
-        });cv= findViewById(R.id.cardEbooks);
-        cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), Ebooks.class);
-                startActivity(intent);
-            }
-        });
+
     }
-
     @Override
     public void onBackPressed() {
         drawerLayout=findViewById(R.id.drawer_layout);
@@ -143,30 +112,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.nav_nightMode:
-                break;
+
             case R.id.nav_calender:
                 startActivity(new Intent(HomeActivity.this,Calender.class));
                break;
-            case R.id.nav_myContent:
-                startActivity(new Intent(HomeActivity.this,MyContent.class));
-                break;
-            case R.id.nav_selectBranch:
-                startActivity(new Intent(HomeActivity.this,SelectBranch.class));
-                break;
-            case R.id.nav_track:
-                startActivity(new Intent(HomeActivity.this,TrackYourself.class));
-                break;
             case R.id.logout:
             {SharedPreferences.Editor editor=sharedPreferences.edit();
             editor.clear();
@@ -176,6 +129,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.help:
                 break;
             case R.id.nav_settings:
+                break;
+            case R.id.aboutUs:
                 break;
 
         }

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/myTheme"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ContentActivity">
+        <!--    tools:showIn="@layout/app_bar_home"-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSyllabus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardBackgroundColor="#F6F8FA"
+                        android:padding="60dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/syllabus"
+                            app:drawableTopCompat="@drawable/syllabus" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardExamPaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:padding="60dp"
+                        app:cardBackgroundColor="#F6F8FA"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:drawableTopCompat="@drawable/pyq"
+                            android:text="@string/pyq" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:padding="60dp"
+                        app:cardBackgroundColor="#F6F8FA"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notes"
+                            app:drawableTopCompat="@drawable/notes" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardIMP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:padding="60dp"
+                        app:cardBackgroundColor="#F6F8FA"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/imp"
+                            app:drawableTopCompat="@drawable/imp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardEbooks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:padding="60dp"
+                        app:cardBackgroundColor="#F6F8FA"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ebooks"
+                            app:drawableTopCompat="@drawable/ebook" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardFlashCards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:padding="60dp"
+                        app:cardBackgroundColor="#F6F8FA"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashCards"
+                            app:drawableTopCompat="@drawable/flashcards" />
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:contentDescription="my account"-->
+<!--        android:gravity="bottom|end"-->
+<!--        android:src="@drawable/baseline_user_24"-->
+<!--        app:backgroundTint="#fff" />-->
+    </RelativeLayout>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Branches">
+        <item>Computer Engineering</item>
+        <item>Information Technology</item>
+        <item>Artificial Intelligence</item>
+        <item>Mechanical Enginnering</item>
+        <item>Electrical Engineering</item>
+        <item>Civil Engineering</item>
+    </string-array>
+
+        <string-array name="Semesters">
+            <item>Semester 1</item>
+            <item>Semester 2</item>
+            <item>Semester 3</item>
+            <item>Semester 4</item>
+            <item>Semester 5</item>
+            <item>Semester 6</item>
+            <item>Semester 7</item>
+            <item>Semester 8</item>
+        </string-array>
+
+
+
+</resources>

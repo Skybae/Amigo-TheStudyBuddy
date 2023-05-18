@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="#F6F8FA"
+        android:padding="60dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Which of the following is a valid HTML tag?"
+            android:textColor="@color/material_dynamic_primary0"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/material_dynamic_primary0"
+            android:text="h1\n&lt;&gt;\n&lt;h1&gt;\n&gt;h1&lt;\n&lt;h1&gt;"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="#F6F8FA"
+        android:padding="60dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Flashcard 2"
+            android:textColor="@color/material_dynamic_primary0"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcard3"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="#F6F8FA"
+        android:padding="60dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Flashcard 3"
+            android:textColor="@color/material_dynamic_primary0"
+            />
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

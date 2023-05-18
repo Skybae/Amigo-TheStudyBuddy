@@ -22,7 +22,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_home" />
+    <include layout="@layout/activity_bottom_navigation" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="55dp"
         android:contentDescription="my account"
         android:src="@drawable/baseline_user_24"
         app:backgroundTint="#fff"

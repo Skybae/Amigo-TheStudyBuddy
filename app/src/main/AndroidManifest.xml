@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sheetal.amigo_thestudybuddy">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,47 +16,55 @@
         android:theme="@style/Theme.AmigoTheStudyBuddy"
         tools:targetApi="31">
         <activity
-            android:name=".Ebooks"
+            android:name=".FlashCardActivity"
+            android:exported="false"
+            android:parentActivityName=".ContentActivity"/>
+        <activity
+            android:name=".ContentActivity"
             android:exported="false"
             android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".DocumentActivity"
+            android:exported="false"
+            android:parentActivityName=".ExamPaper"/>
+        <activity
+            android:name=".BottomNavigationActivity"
+            android:exported="false"
+            />
+        <!--            android:parentActivityName=".HomeActivity"-->
+
+        <activity
+            android:name=".Ebooks"
+            android:exported="false"
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".IMPquestions"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
-        <activity
-            android:name=".Circulars"
-            android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".Notes"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".ExamPaper"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".Syllabus"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".TrackYourself"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"
-            />
-        <activity
-            android:name=".SelectBranch"
-            android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".Calender"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".MyContent"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"
-            />
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".HomeActivity"
             android:exported="false"

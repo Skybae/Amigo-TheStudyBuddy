@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -7,9 +8,9 @@ android {
 
     defaultConfig {
         applicationId "com.sheetal.amigo_thestudybuddy"
-        minSdk 26
+        minSdk 25
         //noinspection ExpiredTargetSdkVersion
-        targetSdk 26
+        targetSdk 25
         versionCode 1
         versionName "1.0"
 
@@ -35,7 +36,10 @@ dependencies {
     //implementation 'androidx.appcompat:appcompat:1.7.0-alpha02'
 
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-    implementation 'com.karumi:dexter:6.2.3'
+    implementation 'com.karumi:dexter:6.2.3'//for permissions
+    //implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
@@ -45,6 +49,9 @@ dependencies {
     //noinspection GradleDependency
     implementation 'androidx.navigation:navigation-fragment:2.4.1'
     implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
