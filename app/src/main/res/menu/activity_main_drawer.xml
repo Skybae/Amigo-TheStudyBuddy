@@ -11,6 +11,11 @@
             android:icon="@drawable/baseline_calendar_month_24"
             android:title="Calender" />
 
+        <item
+            android:id="@+id/myContent"
+            android:icon="@drawable/baseline_content_24"
+            android:title="My Content " />
+
 
     </group>
 
@@ -33,10 +38,7 @@
 <!--            android:id="@+id/nav_track"-->
 <!--            android:icon="@drawable/baseline_assessment_24"-->
 <!--            android:title="@string/track" />-->
-        <item
-            android:id="@+id/logout"
-            android:icon="@drawable/baseline_logout_24"
-            android:title="Logout" />
+
         <item
             android:id="@+id/help"
             android:icon="@drawable/baseline_help_24"
@@ -49,6 +51,10 @@
             android:id="@+id/aboutUs"
             android:icon="@drawable/baseline_info_24"
             android:title="About Us" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Logout" />
     </group>
 </menu>
         </item>

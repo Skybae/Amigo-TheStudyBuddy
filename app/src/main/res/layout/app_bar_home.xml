@@ -32,8 +32,8 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="55dp"
-        android:contentDescription="my account"
-        android:src="@drawable/baseline_user_24"
+        android:contentDescription="chat"
+        android:src="@drawable/chat"
         app:backgroundTint="#fff"
          />
 

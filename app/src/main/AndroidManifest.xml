@@ -27,18 +27,10 @@
             android:name=".DocumentActivity"
             android:exported="false"
             android:parentActivityName=".ExamPaper"/>
-        <activity
-            android:name=".BottomNavigationActivity"
-            android:exported="false"
-            />
         <!--            android:parentActivityName=".HomeActivity"-->
 
         <activity
             android:name=".Ebooks"
-            android:exported="false"
-            android:parentActivityName=".ContentActivity" />
-        <activity
-            android:name=".IMPquestions"
             android:exported="false"
             android:parentActivityName=".ContentActivity" />
         <activity
@@ -47,10 +39,6 @@
             android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".ExamPaper"
-            android:exported="false"
-            android:parentActivityName=".ContentActivity" />
-        <activity
-            android:name=".Syllabus"
             android:exported="false"
             android:parentActivityName=".ContentActivity" />
         <activity

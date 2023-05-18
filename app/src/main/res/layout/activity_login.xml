@@ -76,7 +76,7 @@
                 android:layout_marginTop="60dp"
                 android:layout_marginBottom="10dp"
                 android:defaultFocusHighlightEnabled="false"
-                android:drawableLeft="@drawable/baseline_user_24"
+                android:drawableStart="@drawable/baseline_user_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Username"
@@ -84,7 +84,7 @@
                 android:textColor="@color/black"
                 android:textColorHint="#D7191515"
                 android:textSize="20sp"
-                tools:ignore="VisualLintTextFieldSize" />
+                tools:ignore="UnusedAttribute,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/editTextLoginPassword"
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Password"
@@ -136,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp"
                     android:text="Don't have an account?"
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"

@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarHome.toolbar);
-        binding.appBarHome.fab.setOnClickListener(view -> Snackbar.make(view, "My Account", Snackbar.LENGTH_LONG)
+        binding.appBarHome.fab.setOnClickListener(view -> Snackbar.make(view, "Chat", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
         DrawerLayout drawer = binding.drawerLayout;
         Toolbar toolbar = findViewById(R.id.toolbar);

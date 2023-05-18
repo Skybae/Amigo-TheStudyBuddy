@@ -42,7 +42,7 @@ public class ExamPaper extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPdfActivity("ticket2.pdf");
+                openPdfActivity("Summer 22.pdf");
             }
         });
 
@@ -50,21 +50,14 @@ public class ExamPaper extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPdfActivity("PEMArticle.pdf");
-            }
-        });
-        cardView=findViewById(R.id.summer21);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPdfActivity("PEMArticle.pdf");
+                openPdfActivity("Winter 22.pdf");
             }
         });
         cardView=findViewById(R.id.winter21);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPdfActivity("PEMArticle.pdf");
+                openPdfActivity("Winter 21.pdf");
             }
         });
     }
@@ -72,7 +65,7 @@ public class ExamPaper extends AppCompatActivity {
 
 
     private void openPdfActivity(String selectedPdf) {
-        Intent intent = new Intent(ExamPaper.this, DocumentActivity.class);
+        Intent intent = new Intent(getApplicationContext(), DocumentActivity.class);
         intent.putExtra("pdfFileName", selectedPdf);
         startActivity(intent);
     }

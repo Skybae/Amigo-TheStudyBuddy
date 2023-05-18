@@ -23,7 +23,7 @@
                 android:layout_marginBottom="20dp">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/summer21"
+                    android:id="@+id/unit1"
                     android:layout_width="wrap_content"
                     android:layout_height="180dp"
                     android:layout_row="0"
@@ -40,13 +40,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/summer22"
+                        android:text="Unit 1"
                         app:drawableTopCompat="@drawable/pdffile" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardExamPaper"
+                    android:id="@+id/unit2"
                     android:layout_width="wrap_content"
                     android:layout_height="180dp"
                     android:layout_row="0"
@@ -64,11 +64,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:drawableTopCompat="@drawable/pdffile"
-                        android:text="@string/winter22" />
+                        android:text="Unit 2" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardNotes"
+                    android:id="@+id/unit3"
                     android:layout_width="wrap_content"
                     android:layout_height="180dp"
                     android:layout_row="1"
@@ -85,13 +85,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/summer21"
+                        android:text="Unit 3"
                         app:drawableTopCompat="@drawable/pdffile" />
                 </androidx.cardview.widget.CardView>
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardIMP"
+                    android:id="@+id/unit4"
                     android:layout_width="wrap_content"
                     android:layout_height="180dp"
                     android:layout_row="1"
@@ -108,7 +108,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/winter21"
+                        android:text="Unit 4"
                         app:drawableTopCompat="@drawable/pdffile" />
                 </androidx.cardview.widget.CardView>
 

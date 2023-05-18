@@ -8,7 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 public class ContentActivity extends AppCompatActivity {
+    private PDFView pdfView;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -17,14 +20,13 @@ public class ContentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_content);
 
                 getSupportActionBar().setTitle("WebProgramming");
-
+        pdfView = findViewById(R.id.pdfView);
         CardView cv;
         cv= findViewById(R.id.cardSyllabus);
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), Syllabus.class);
-                startActivity(intent);
+                openPdfActivity("3160713 Syllabus.pdf");
             }
         });
         cv= findViewById(R.id.cardExamPaper);
@@ -49,8 +51,8 @@ public class ContentActivity extends AppCompatActivity {
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(), IMPquestions.class);
-                startActivity(intent);
+                    openPdfActivity("IMP Questions.pdf");
+
             }
         });
         cv= findViewById(R.id.cardEbooks);
@@ -70,5 +72,10 @@ public class ContentActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    private void openPdfActivity(String selectedPdf) {
+        Intent intent = new Intent(getApplicationContext(), DocumentActivity.class);
+        intent.putExtra("pdfFileName", selectedPdf);
+        startActivity(intent);
     }
     }
