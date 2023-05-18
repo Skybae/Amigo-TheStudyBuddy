@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,12 +26,9 @@ public class Login extends android.app.Activity {
           edUsername= findViewById(R.id.editTextLoginUsername);
           edPassword=findViewById(R.id.editTextLoginPassword);
         TextView textView =  findViewById(R.id.signUp);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, SignUp.class);
-                Login.this.startActivity(intent);
-            }
+        textView.setOnClickListener(view -> {
+            Intent intent = new Intent(Login.this, SignUp.class);
+            Login.this.startActivity(intent);
         });
 
        Button button = findViewById(R.id.btn);
