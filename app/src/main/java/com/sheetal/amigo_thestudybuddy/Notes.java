@@ -19,37 +19,37 @@ public class Notes extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Notes");
 
-        pdfView = findViewById(R.id.pdfView);
+//        pdfView = findViewById(R.id.pdfView);
 
-        cardView = findViewById(R.id.unit1);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPdfActivity("Unit 1.pdf");
-            }
-        });
-
-        cardView=findViewById(R.id.unit2);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPdfActivity("Unit 2.pptx");
-            }
-        });
-        cardView=findViewById(R.id.unit3);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPdfActivity("Unit 3.pptx");
-            }
-        });
-        cardView=findViewById(R.id.unit4);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPdfActivity("Unit 4.pptx");
-            }
-        });
+//        cardView = findViewById(R.id.unit1);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPdfActivity("Unit 1.pdf");
+//            }
+//        });
+//
+//        cardView=findViewById(R.id.unit2);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPdfActivity("U");
+//            }
+//        });
+//        cardView=findViewById(R.id.unit3);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPdfActivity("Unit 3.pptx");
+//            }
+//        });
+//        cardView=findViewById(R.id.unit4);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPdfActivity("Unit 4.pptx");
+//            }
+//        });
     }
     private void openPdfActivity(String selectedPdf) {
         Intent intent = new Intent(getApplicationContext(), DocumentActivity.class);

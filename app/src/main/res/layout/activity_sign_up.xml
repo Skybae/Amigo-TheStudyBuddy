@@ -8,26 +8,28 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:foregroundGravity="left"
             android:gravity="left"
             android:text="Create New Account"
-            android:textColor="@color/amigo"
+            android:textColor="?android:textColorPrimary"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,13 +45,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/baseline_user_24"
+                android:layout_marginTop="60dp"
+                android:drawableStart="@drawable/baseline_user_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Your Name"
                 android:inputType="textPersonName"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="20sp" />
 
             <EditText
@@ -58,12 +60,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:drawableLeft="@drawable/phone"
+                android:drawableStart="@drawable/phone"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Your Phone Number"
                 android:inputType="phone"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="20sp" />
 
             <EditText
@@ -72,12 +74,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:drawableLeft="@drawable/email"
+                android:drawableStart="@drawable/email"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Your Email Id"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="20sp" />
 
             <EditText
@@ -86,12 +88,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Enter Password"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="20sp" />
 
             <EditText
@@ -99,12 +101,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="20sp" />
 
             <android.widget.Button
@@ -126,15 +128,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Already have an account?"
-                    android:textColor="@color/amigo" />
+                    android:textColor="?android:textColorPrimary" />
 
                 <TextView
                     android:id="@+id/signIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:text="SignIn"
-                    android:textColor="@color/amigo"
+                    android:textColor="?android:textColorPrimary"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -152,7 +154,7 @@
                     android:layout_width="50dp"
                     android:layout_height="2dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
                     android:background="@drawable/bt_gradient" />
 
                 <TextView
@@ -163,14 +165,14 @@
                     android:foregroundGravity="center"
                     android:gravity="center"
                     android:text="Or with"
-                    android:textColor="@color/amigo" />
+                    android:textColor="?android:textColorPrimary" />
 
                 <View
                     android:id="@+id/view2"
                     android:layout_width="50dp"
                     android:layout_height="2dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
                     android:background="@drawable/bt_gradient" />
 
             </LinearLayout>
@@ -201,7 +203,7 @@
             </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
     </ScrollView>
 
 </RelativeLayout>
