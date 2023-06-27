@@ -1,10 +1,8 @@
 package com.sheetal.amigo_thestudybuddy;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-
-import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MyContent extends AppCompatActivity {
 

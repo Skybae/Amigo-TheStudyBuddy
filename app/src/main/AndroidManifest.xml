@@ -16,19 +16,20 @@
         android:theme="@style/Theme.AmigoTheStudyBuddy"
         tools:targetApi="31">
         <activity
+            android:name=".viewpdf"
+            android:exported="false" />
+        <activity
             android:name=".FlashCardActivity"
             android:exported="false"
-            android:parentActivityName=".ContentActivity"/>
+            android:parentActivityName=".ContentActivity" />
         <activity
             android:name=".ContentActivity"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".DocumentActivity"
             android:exported="false"
-            android:parentActivityName=".ExamPaper"/>
-        <!--            android:parentActivityName=".HomeActivity"-->
-
+            android:parentActivityName=".ExamPaper" /> <!-- android:parentActivityName=".HomeActivity" -->
         <activity
             android:name=".Ebooks"
             android:exported="false"

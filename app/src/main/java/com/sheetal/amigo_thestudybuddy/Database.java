@@ -1,5 +1,6 @@
 package com.sheetal.amigo_thestudybuddy;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -37,7 +38,7 @@ public class Database extends SQLiteOpenHelper {
         str[0]=username;
         str[1]=password;
         SQLiteDatabase db=getReadableDatabase();
-        Cursor c=db.rawQuery("select * from users where username=? and password=?",str);
+        @SuppressLint("Recycle") Cursor c=db.rawQuery("select * from users where username=? and password=?",str);
         if(c.moveToFirst()){
             result=1;
         }

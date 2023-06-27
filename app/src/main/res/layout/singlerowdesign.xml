@@ -1,0 +1,22 @@
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:layout_gravity="fill"
+    app:cardBackgroundColor="#F6F8FA"
+    android:padding="60dp"
+    app:cardUseCompatPadding="true">
+
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summer22"
+            app:drawableTopCompat="@drawable/pdffile" />
+
+</androidx.cardview.widget.CardView>
